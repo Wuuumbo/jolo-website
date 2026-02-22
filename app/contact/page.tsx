@@ -4,7 +4,7 @@ import OpenStatus from '@/components/OpenStatus';
 export const metadata: Metadata = {
   title: 'ElfeJolo Bourges — Adresse, Horaires & Téléphone | 16 Rue Coursarlon',
   description:
-    'ElfeJolo : 16 Rue Coursarlon 18000 Bourges (parking gratuit). Ouvert mar+mer+ven+sam. ☎ 06 73 88 32 26. Jouets seconde main & dépôt-vente.',
+    'ElfeJolo : 16 Rue Coursarlon 18000 Bourges. Ouvert mar+mer+ven+sam. ☎ 06 73 88 32 26. Jouets seconde main & dépôt-vente.',
 };
 
 const breadcrumbLd = {
@@ -66,7 +66,7 @@ export default function ContactPage() {
             <OpenStatus />
           </div>
           <p className="text-brown-light font-nunito text-lg max-w-xl mx-auto">
-            On vous attend avec le sourire ! Parking gratuit dans la rue.
+            On vous attend avec le sourire !
           </p>
         </div>
 
@@ -213,7 +213,7 @@ export default function ContactPage() {
             ))}
           </div>
           <div className="mt-6 bg-yellow/20 rounded-2xl p-4 text-sm text-brown-light font-nunito text-center">
-            🎉 <strong className="text-brown">Parking gratuit</strong> dans la rue · Arrivages tous les jours !
+            🎉 Arrivages tous les jours !
           </div>
         </div>
 

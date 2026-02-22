@@ -35,7 +35,7 @@ const benefits = [
   { emoji: '📦', title: 'Arrivages quotidiens', desc: 'Chaque visite est une nouvelle surprise' },
   { emoji: '🌱', title: 'Écolo & malin', desc: 'Moins de déchets, plus de bonheur' },
   { emoji: '🤝', title: 'Conseil de Cécilia', desc: 'Elle connaît chaque article par cœur' },
-  { emoji: '🚗', title: 'Parking gratuit', desc: 'Facile d\'accès, idéal avec les enfants' },
+  { emoji: '📍', title: 'Centre-ville', desc: 'Facilement accessible en voiture et à pied' },
 ];
 
 const testimonials = [
@@ -70,7 +70,7 @@ const howItWorks = [
     n: '1',
     emoji: '🚶',
     title: 'On vient',
-    desc: '16 Rue Coursarlon, Bourges. Parking gratuit dans la rue.',
+    desc: '16 Rue Coursarlon, Bourges. En plein centre-ville.',
   },
   {
     n: '2',
@@ -89,7 +89,7 @@ const howItWorks = [
 const faqs = [
   {
     q: 'Où se trouve ElfeJolo à Bourges ?',
-    a: '16 Rue Coursarlon, 18000 Bourges. Parking gratuit dans la rue. Facilement accessible en voiture et à pied depuis le centre-ville.',
+    a: '16 Rue Coursarlon, 18000 Bourges. Facilement accessible en voiture et à pied depuis le centre-ville.',
   },
   {
     q: 'Quels sont les horaires d\'ouverture ?',
@@ -102,10 +102,6 @@ const faqs = [
   {
     q: 'Comment vendre ou déposer mes jouets chez ElfeJolo ?',
     a: 'Apportez vos jeux et jouets en boutique durant les heures d\'ouverture. Cécilia les évalue sur place et propose soit un rachat immédiat, soit une mise en dépôt-vente. Vous pouvez appeler le 06 73 88 32 26 avant pour les gros volumes.',
-  },
-  {
-    q: 'Y a-t-il du parking à proximité ?',
-    a: 'Oui ! Stationnement gratuit dans la rue Coursarlon. Idéal quand vous venez avec des cartons à déposer ou que vous repartez avec de belles trouvailles.',
   },
   {
     q: 'Quels moyens de paiement acceptez-vous ?',
@@ -262,7 +258,7 @@ export default function HomePage() {
               href="/contact"
               className="px-8 py-4 bg-white text-brown border-2 border-brown/10 rounded-full text-lg font-bold hover:border-coral hover:text-coral transition-all duration-200 hover:scale-105 shadow-sm font-nunito"
             >
-              📍 Venir en boutique (parking gratuit)
+              📍 Venir en boutique
             </Link>
           </motion.div>
 
@@ -277,7 +273,7 @@ export default function HomePage() {
             <span className="text-brown/30 hidden sm:inline">·</span>
             <span>📍 16 Rue Coursarlon, Bourges</span>
             <span className="text-brown/30 hidden sm:inline">·</span>
-            <span>🚗 Parking gratuit</span>
+            <span>🏙️ Centre-ville</span>
           </motion.div>
         </div>
 
@@ -649,7 +645,7 @@ export default function HomePage() {
               {ctaTitle}
             </h2>
             <p className="text-white/90 font-nunito text-lg mb-8 max-w-xl mx-auto">
-              Arrivages traités chaque matin · Parking gratuit · 4.9★ Google · 5★ Facebook
+              Arrivages traités chaque matin · 4.9★ Google · 5★ Facebook
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a

@@ -106,7 +106,7 @@ const jsonLdFaq = {
       name: 'Où se trouve ElfeJolo à Bourges ?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: '16 Rue Coursarlon, 18000 Bourges. Parking gratuit dans la rue. Facilement accessible en voiture et à pied depuis le centre-ville.',
+        text: '16 Rue Coursarlon, 18000 Bourges. Facilement accessible en voiture et à pied depuis le centre-ville.',
       },
     },
     {
@@ -131,14 +131,6 @@ const jsonLdFaq = {
       acceptedAnswer: {
         '@type': 'Answer',
         text: 'Apportez vos jeux et jouets en boutique durant les heures d\'ouverture. Cécilia les évalue sur place et propose soit un rachat immédiat, soit une mise en dépôt-vente. Vous pouvez appeler le 06 73 88 32 26 avant pour les gros volumes.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'Y a-t-il du parking à proximité ?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Oui ! Stationnement gratuit dans la rue Coursarlon. Idéal quand vous venez avec des cartons à déposer ou que vous repartez avec de belles trouvailles.',
       },
     },
     {
