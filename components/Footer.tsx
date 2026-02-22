@@ -94,7 +94,10 @@ export default function Footer() {
             <li className="flex items-center gap-2">
               <span>⭐</span>
               <span className="text-yellow font-bold">4.9/5</span>
-              <span>sur Google</span>
+              <span>Google</span>
+              <span className="text-white/30">·</span>
+              <span className="text-yellow font-bold">5/5</span>
+              <span>Facebook</span>
             </li>
           </ul>
         </div>

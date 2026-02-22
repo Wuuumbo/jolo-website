@@ -23,9 +23,9 @@ const categories = [
 ];
 
 const stats = [
-  { emoji: '⭐', number: '4 928', label: 'Avis Google', bg: 'bg-yellow/40' },
-  { emoji: '🧸', number: '1 000+', label: 'Jouets en stock', bg: 'bg-peach' },
-  { emoji: '📦', number: 'Chaque jour', label: 'Arrivages', bg: 'bg-sage/30' },
+  { emoji: '⭐', number: '4.9★ Google', label: '5★ sur Facebook', bg: 'bg-yellow/40' },
+  { emoji: '🧸', number: '1 000+', label: 'Articles en stock', bg: 'bg-peach' },
+  { emoji: '📘', number: '3 500+', label: 'Abonnés Facebook', bg: 'bg-sage/30' },
   { emoji: '🎉', number: 'Depuis 2019', label: 'On régale Bourges', bg: 'bg-coral/20' },
 ];
 
@@ -210,7 +210,7 @@ export default function HomePage() {
           >
             <span className="text-xl">🏆</span>
             <span className="text-brown font-bold text-sm font-nunito">
-              N°1 jouets seconde main à Bourges · <strong>4.9★</strong> · <strong>4 928 avis</strong>
+              N°1 à Bourges · <strong>4.9★ Google</strong> · <strong>5★ Facebook</strong> · 3 500 abonnés
             </span>
           </motion.div>
 
@@ -232,7 +232,7 @@ export default function HomePage() {
             transition={{ duration: 0.5, delay: 0.28 }}
             className="text-sm md:text-base text-brown font-bold font-nunito mb-4 tracking-wide"
           >
-            1 000+ trésors · arrivages chaque jour · prix imbattables
+            Livres · jouets · jeux · puzzles · arrivages chaque jour · prix imbattables
           </motion.p>
 
           <motion.p
@@ -467,7 +467,7 @@ export default function HomePage() {
             </p>
 
             <div className="flex flex-wrap justify-center gap-3 mb-8">
-              {['🌱 Ouverte depuis 2019', '⭐ 4.9/5 sur Google', '🔍 Sélection rigoureuse'].map((badge) => (
+              {['🌱 Ouverte depuis 2019', '⭐ 4.9/5 Google · 5/5 Facebook', '🔍 Sélection rigoureuse'].map((badge) => (
                 <span key={badge} className="bg-white/20 backdrop-blur-sm text-white px-4 py-2 rounded-full text-sm font-bold font-nunito border border-white/30">
                   {badge}
                 </span>
@@ -531,7 +531,7 @@ export default function HomePage() {
               className="text-4xl md:text-5xl font-fredoka text-brown"
               style={{ fontFamily: 'Fredoka One, cursive' }}
             >
-              Plus de <span className="text-coral">4 928 familles</span> nous font confiance
+              Plus de <span className="text-coral">500 familles</span> nous font confiance
             </h2>
           </div>
 
@@ -566,8 +566,8 @@ export default function HomePage() {
                 <span className="text-2xl">⭐</span>
                 <div className="font-nunito">
                   <span className="font-bold text-brown text-lg">Note moyenne de </span>
-                  <span className="font-bold text-coral text-xl">4.9/5</span>
-                  <div className="text-brown-light text-xs">Basé sur 4 928 avis vérifiés</div>
+                  <span className="font-bold text-coral text-xl">4.9/5 Google · 5/5 Facebook</span>
+                  <div className="text-brown-light text-xs">Plus de 500 familles · 3 500 abonnés Facebook</div>
                 </div>
               </div>
               <a
@@ -649,7 +649,7 @@ export default function HomePage() {
               {ctaTitle}
             </h2>
             <p className="text-white/90 font-nunito text-lg mb-8 max-w-xl mx-auto">
-              Arrivages traités chaque matin · Parking gratuit · 4.9★ sur Google
+              Arrivages traités chaque matin · Parking gratuit · 4.9★ Google · 5★ Facebook
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a

@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 
 const messages = [
   "🎁 Arrivages cette semaine · Venez avant que ça parte !",
-  "⭐ 4 928 familles nous font confiance · Note 4.9/5 Google",
+  "⭐ Plus de 500 familles nous font confiance · 4.9/5 Google · 5/5 Facebook",
   "🌱 Jusqu'à -80% vs prix neuf · Jouets de qualité à prix mini",
 ];
 

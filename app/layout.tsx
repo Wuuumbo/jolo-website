@@ -11,14 +11,14 @@ export const metadata: Metadata = {
     default: 'ElfeJolo – Jouets & Livres de Seconde Main à Bourges',
   },
   description:
-    "Boutique jouets, jeux et livres d'occasion à Bourges · +1 000 articles · arrivages quotidiens · 4.9★ 4 928 avis Google · 16 Rue Coursarlon · ☎ 06 73 88 32 26",
+    "Boutique livres, jouets, jeux et puzzles de seconde main à Bourges · +1 000 articles · arrivages quotidiens · 4.9★ Google · 5/5 Facebook · 16 Rue Coursarlon · ☎ 06 73 88 32 26",
   keywords:
     'jouets seconde main Bourges, jeux occasion Bourges, livres enfants Bourges, ElfeJolo, boutique jouets Bourges, déguisements enfants',
   authors: [{ name: 'ElfeJolo' }],
   openGraph: {
     title: 'ElfeJolo – Jouets & Livres de Seconde Main à Bourges',
     description:
-      "La caverne d'Ali Baba des jouets à Bourges ! Jeux, jouets, puzzles, livres et déguisements de seconde main. Arrivages quotidiens. 4.9★ 4 928 avis.",
+      "La caverne d'Ali Baba à Bourges ! Livres, jouets, jeux et puzzles de seconde main. Arrivages quotidiens. 4.9★ Google · 5/5 Facebook · 3 500 abonnés.",
     url: 'https://elfejolo.fr',
     siteName: 'ElfeJolo',
     locale: 'fr_FR',
@@ -43,7 +43,7 @@ const jsonLdStore = {
   '@context': 'https://schema.org',
   '@type': 'Store',
   name: 'ElfeJolo',
-  description: 'Boutique de jouets, jeux et livres de seconde main à Bourges.',
+  description: 'Boutique de livres, jouets, jeux et puzzles de seconde main à Bourges.',
   url: 'https://elfejolo.fr',
   telephone: '+33673883226',
   priceRange: '€',
@@ -88,7 +88,7 @@ const jsonLdStore = {
   aggregateRating: {
     '@type': 'AggregateRating',
     ratingValue: '4.9',
-    reviewCount: '4928',
+    reviewCount: '500',
     bestRating: '5',
   },
   sameAs: [

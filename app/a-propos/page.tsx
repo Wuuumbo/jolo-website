@@ -4,7 +4,7 @@ import Link from 'next/link';
 export const metadata: Metadata = {
   title: "L'Histoire d'ElfeJolo | Boutique Jouets Bourges depuis 2019",
   description:
-    'ElfeJolo fondée par Cécilia en 2019 : la référence jouets seconde main à Bourges. 4.9/5 sur Google, 4 928 avis, 1 000+ articles. Découvrez notre histoire.',
+    'ElfeJolo fondée par Cécilia en 2019 : la référence livres, jouets et jeux de seconde main à Bourges. 4.9/5 sur Google · 5/5 sur Facebook · 500+ familles. Découvrez notre histoire.',
 };
 
 const breadcrumbLd = {
@@ -57,7 +57,7 @@ const timeline = [
   { year: '2019', label: 'Ouverture de la boutique', emoji: '🎉', color: 'bg-coral' },
   { year: '2020', label: 'Cap des 1 000 articles', emoji: '🧸', color: 'bg-yellow' },
   { year: '2022', label: 'Lancement du dépôt-vente', emoji: '🌱', color: 'bg-sage' },
-  { year: '2024', label: '4 928 avis Google ⭐ 4.9/5', emoji: '⭐', color: 'bg-coral' },
+  { year: '2024', label: '500+ familles · 4.9/5 Google · 5/5 Facebook', emoji: '⭐', color: 'bg-coral' },
 ];
 
 export default function AProposPage() {
@@ -110,7 +110,7 @@ export default function AProposPage() {
                 C'est ainsi qu'<strong className="text-coral">ElfeJolo</strong> a ouvert ses portes
                 au <strong className="text-brown">16 Rue Coursarlon à Bourges</strong>, dans un quartier
                 qu'elle adore pour son charme et son dynamisme. Depuis, la boutique est devenue
-                <em> « la référence jeunesse de Bourges »</em>, avec une note de <strong className="text-coral">4.9/5</strong> sur Google.
+                <em> « la référence livres, jouets et jeux de Bourges »</em>, avec <strong className="text-coral">4.9/5 sur Google</strong> et <strong className="text-coral">5/5 sur Facebook</strong>.
               </p>
             </div>
           </div>
