@@ -11,23 +11,34 @@ const values = [
   {
     emoji: '🌍',
     title: 'Éco-responsable',
-    desc: 'Donner une seconde vie aux jouets, c\'est préserver notre planète. Chaque achat chez ElfeJolo est un geste pour l\'environnement.',
+    desc: "Donner une seconde vie aux jouets, c'est préserver notre planète. Chaque achat chez ElfeJolo est un geste pour l'environnement.",
+    bg: 'bg-sage/20',
   },
   {
     emoji: '💛',
     title: 'Sélection rigoureuse',
     desc: 'Chaque article est soigneusement inspecté. Seuls les produits en très bon état rejoignent nos rayons.',
+    bg: 'bg-yellow/25',
   },
   {
     emoji: '🤝',
     title: 'Conseil personnalisé',
     desc: 'Cécilia connaît parfaitement ses produits et vous guide vers le bon choix pour le bon âge.',
+    bg: 'bg-peach',
   },
   {
     emoji: '💰',
     title: 'Prix accessibles',
     desc: 'La qualité ne devrait pas être un luxe. Chez ElfeJolo, les prix sont toujours compétitifs.',
+    bg: 'bg-coral/10',
   },
+];
+
+const timeline = [
+  { year: '2019', label: 'Ouverture de la boutique', emoji: '🎉', color: 'bg-coral' },
+  { year: '2020', label: 'Cap des 1 000 articles', emoji: '🧸', color: 'bg-yellow' },
+  { year: '2022', label: 'Lancement du dépôt-vente', emoji: '🌱', color: 'bg-sage' },
+  { year: '2024', label: '4 928 avis Google ⭐ 4.9/5', emoji: '⭐', color: 'bg-coral' },
 ];
 
 export default function AProposPage() {
@@ -63,20 +74,68 @@ export default function AProposPage() {
             </h2>
             <div className="space-y-4 text-brown-light font-nunito text-lg leading-relaxed">
               <p>
-                Tout a commencé dans un garage. <strong className="text-brown">Cécilia</strong>, passionnée 
-                par l'enfance et soucieuse de l'environnement, a eu une idée simple mais belle : 
+                Tout a commencé dans un garage. <strong className="text-brown">Cécilia</strong>, passionnée
+                par l'enfance et soucieuse de l'environnement, a eu une idée simple mais belle :
                 donner une seconde vie aux jouets de ses propres enfants plutôt que de les jeter.
               </p>
               <p>
-                Rapidement, le bouche-à-oreille a fait son œuvre. Les voisins apportaient leurs jouets, 
+                Rapidement, le bouche-à-oreille a fait son œuvre. Les voisins apportaient leurs jouets,
                 les amis cherchaient les bons plans… Le garage est devenu trop petit.
               </p>
               <p>
-                C'est ainsi qu'<strong className="text-coral">ElfeJolo</strong> a ouvert ses portes 
-                au <strong className="text-brown">71 Rue d'Auron à Bourges</strong>, dans un quartier 
-                qu'elle adore pour son charme et son dynamisme. Depuis, la boutique est devenue 
+                C'est ainsi qu'<strong className="text-coral">ElfeJolo</strong> a ouvert ses portes
+                au <strong className="text-brown">16 Rue Coursarlon à Bourges</strong>, dans un quartier
+                qu'elle adore pour son charme et son dynamisme. Depuis, la boutique est devenue
                 <em> « la référence jeunesse de Bourges »</em>, avec une note de <strong className="text-coral">4.9/5</strong> sur Google.
               </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Timeline */}
+        <div className="mb-16">
+          <h2
+            className="font-fredoka text-4xl text-brown text-center mb-10"
+            style={{ fontFamily: 'Fredoka One, cursive' }}
+          >
+            Notre <span className="text-coral">parcours</span>
+          </h2>
+          <div className="relative">
+            {/* Vertical line */}
+            <div
+              className="absolute left-8 md:left-1/2 top-0 bottom-0 w-1 rounded-full md:-translate-x-0.5"
+              style={{ background: 'linear-gradient(to bottom, #FF8C6B, #FFD166, #6BCB77)' }}
+            />
+            <div className="space-y-8">
+              {timeline.map((item, i) => (
+                <div
+                  key={item.year}
+                  className={`relative flex items-center gap-6 md:gap-0 ${
+                    i % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'
+                  }`}
+                >
+                  {/* Content */}
+                  <div className={`flex-1 ${i % 2 === 0 ? 'md:pr-12 md:text-right' : 'md:pl-12'} pl-20 md:pl-0`}>
+                    <div
+                      className={`inline-block bg-white rounded-2xl px-6 py-4 shadow-sm border border-brown/5 ${
+                        i % 2 === 0 ? '' : 'md:ml-0'
+                      }`}
+                    >
+                      <div className="text-2xl mb-1">{item.emoji}</div>
+                      <div className="font-fredoka text-2xl text-coral" style={{ fontFamily: 'Fredoka One, cursive' }}>
+                        {item.year}
+                      </div>
+                      <div className="font-nunito text-brown font-bold text-sm">{item.label}</div>
+                    </div>
+                  </div>
+                  {/* Dot */}
+                  <div
+                    className={`absolute left-6 md:left-1/2 md:-translate-x-1/2 w-5 h-5 rounded-full border-4 border-white ${item.color} shadow-md`}
+                  />
+                  {/* Spacer for alternating layout */}
+                  <div className="hidden md:block flex-1" />
+                </div>
+              ))}
             </div>
           </div>
         </div>
@@ -93,9 +152,9 @@ export default function AProposPage() {
             {values.map((v) => (
               <div
                 key={v.title}
-                className="bg-white rounded-3xl p-8 border border-brown/5 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 flex gap-5 items-start"
+                className={`${v.bg} rounded-3xl p-8 border border-white/80 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 flex gap-5 items-start`}
               >
-                <span className="text-4xl">{v.emoji}</span>
+                <span className="text-5xl">{v.emoji}</span>
                 <div>
                   <h3
                     className="font-fredoka text-xl text-brown mb-2"
@@ -117,7 +176,7 @@ export default function AProposPage() {
         >
           <div className="text-5xl mb-4">💬</div>
           <blockquote className="text-white text-xl md:text-2xl font-nunito italic leading-relaxed max-w-2xl mx-auto mb-4">
-            &ldquo;Une amie est venue avec une peluche remplie d'amour venant de votre boutique 
+            &ldquo;Une amie est venue avec une peluche remplie d'amour venant de votre boutique
             pour apporter de la douceur et du réconfort à une petite fille plâtrée.&rdquo;
           </blockquote>
           <cite className="text-white/70 font-nunito text-sm">— Un avis client Google</cite>

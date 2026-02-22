@@ -14,8 +14,12 @@ const items = [
   { emoji: '🎭', name: 'Déguisements', condition: 'Lavés & prêts', badge: 'Nouveauté', color: 'bg-yellow/20' },
   { emoji: '🚗', name: 'Véhicules & circuits', condition: 'Testés & fonctionnels', badge: null, color: 'bg-sage/20' },
   { emoji: '🎨', name: 'Loisirs créatifs', condition: 'Articles neufs', badge: '✨ Neuf', color: 'bg-peach' },
-  { emoji: '🪆', name: 'Jouets d\'éveil', condition: 'Hygiénisés', badge: null, color: 'bg-coral/10' },
+  { emoji: '🪆', name: "Jouets d'éveil", condition: 'Hygiénisés', badge: null, color: 'bg-coral/10' },
   { emoji: '🎠', name: 'Jeux en bois', condition: 'Sélection premium', badge: 'Qualité', color: 'bg-yellow/20' },
+  { emoji: '🎵', name: 'Instruments musicaux', condition: 'Testés & accordés', badge: null, color: 'bg-sage/20' },
+  { emoji: '🏃', name: 'Jeux de plein air', condition: 'Prêts à jouer', badge: null, color: 'bg-peach' },
+  { emoji: '🔬', name: 'Jeux scientifiques', condition: 'Complets & vérifiés', badge: null, color: 'bg-yellow/30' },
+  { emoji: '🧱', name: 'Constructions & LEGO', condition: 'Pièces vérifiées', badge: 'Populaire', color: 'bg-coral/10' },
 ];
 
 export default function CataloguePage() {
@@ -33,10 +37,13 @@ export default function CataloguePage() {
           >
             Notre <span className="text-coral">catalogue</span>
           </h1>
-          <p className="text-brown-light font-nunito text-lg max-w-2xl mx-auto">
+          <p className="text-brown-light font-nunito text-lg max-w-2xl mx-auto mb-4">
             Tous nos articles sont soigneusement sélectionnés et vérifiés avant d'arriver en boutique.
             Venez découvrir les nouveautés directement en magasin – ça change chaque jour !
           </p>
+          <span className="inline-block bg-yellow/30 text-brown px-4 py-1.5 rounded-full text-sm font-bold font-nunito">
+            13 catégories · Arrivages chaque jour
+          </span>
         </div>
 
         {/* Note: no e-commerce */}
@@ -45,25 +52,25 @@ export default function CataloguePage() {
           <div>
             <p className="font-bold text-brown font-nunito">Boutique physique uniquement</p>
             <p className="text-brown-light text-sm font-nunito mt-1">
-              Nous ne vendons pas en ligne. Retrouvez-nous au <strong>71 Rue d'Auron à Bourges</strong>, 
+              Nous ne vendons pas en ligne. Retrouvez-nous au <strong>16 Rue Coursarlon à Bourges</strong>,
               ou suivez nos <strong>arrivages sur Facebook</strong> pour ne rien rater !
             </p>
           </div>
         </div>
 
         {/* Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
           {items.map((item) => (
             <div
               key={item.name}
-              className={`${item.color} rounded-3xl p-6 md:p-8 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 border border-white/80 relative overflow-hidden group`}
+              className={`${item.color} card-shine rounded-3xl p-6 md:p-8 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 border border-white/80 relative overflow-hidden group`}
             >
               {item.badge && (
                 <span className="absolute top-4 right-4 bg-coral text-white text-xs font-bold px-2.5 py-1 rounded-full font-nunito">
                   {item.badge}
                 </span>
               )}
-              <div className="text-5xl mb-4 group-hover:scale-110 transition-transform duration-300 inline-block">
+              <div className="text-5xl md:text-6xl mb-4 group-hover:scale-110 transition-transform duration-300 inline-block">
                 {item.emoji}
               </div>
               <h2

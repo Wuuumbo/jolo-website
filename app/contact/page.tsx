@@ -48,7 +48,7 @@ export default function ContactPage() {
           <div className="rounded-3xl overflow-hidden shadow-lg border border-brown/5" style={{ minHeight: '400px' }}>
             <iframe
               title="ElfeJolo sur Google Maps"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2699.4!2d2.3964!3d47.0804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDfCsDA0JzQ5LjQiTiAywrAyMyczMS4wIkU!5e0!3m2!1sfr!2sfr!4v1234567890!5m2!1sfr!2sfr&q=16+Rue+Coursarlon+18000+Bourges"
+              src="https://maps.google.com/maps?q=Elfe+Jolo+16+Rue+Coursarlon+Bourges&output=embed"
               width="100%"
               height="100%"
               style={{ border: 0, minHeight: '400px' }}
@@ -77,9 +77,9 @@ export default function ContactPage() {
                   href="https://www.google.com/maps/dir/?api=1&destination=16+Rue+Coursarlon,+18000+Bourges"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-block mt-2 text-coral text-sm font-bold hover:underline font-nunito"
+                  className="inline-flex items-center gap-2 mt-3 px-5 py-2.5 bg-coral text-white rounded-full text-sm font-bold hover:bg-coral-dark transition-all font-nunito"
                 >
-                  Itinéraire →
+                  📍 Itinéraire →
                 </a>
               </div>
             </div>
@@ -98,9 +98,9 @@ export default function ContactPage() {
                 </h3>
                 <a
                   href="tel:0673883226"
-                  className="text-coral font-bold text-lg hover:underline font-nunito"
+                  className="inline-flex items-center gap-2 mt-2 px-5 py-2.5 bg-coral text-white rounded-full text-lg font-bold hover:bg-coral-dark transition-all font-nunito"
                 >
-                  06 73 88 32 26
+                  📞 06 73 88 32 26
                 </a>
               </div>
             </div>
@@ -161,11 +161,14 @@ export default function ContactPage() {
         {/* Hours */}
         <div className="bg-white rounded-3xl p-8 md:p-10 border border-brown/5 shadow-sm max-w-2xl mx-auto">
           <h2
-            className="font-fredoka text-3xl text-brown mb-6 text-center"
+            className="font-fredoka text-3xl text-brown mb-4 text-center"
             style={{ fontFamily: 'Fredoka One, cursive' }}
           >
             🕐 Horaires d'ouverture
           </h2>
+          <div className="mb-6 bg-coral/10 border border-coral/20 rounded-2xl px-4 py-3 text-center text-sm font-nunito text-brown">
+            🚫 <strong>Fermé le lundi, le jeudi et le dimanche</strong>
+          </div>
           <div className="divide-y divide-brown/5">
             {hours.map((h) => (
               <div key={h.day} className="flex justify-between items-center py-3">
@@ -200,7 +203,7 @@ export default function ContactPage() {
             Vous avez des jouets à vendre ?
           </h2>
           <p className="text-white/90 font-nunito mb-6 max-w-md mx-auto">
-            Apportez vos jeux et jouets en boutique ! Cécilia les rachète ou les met en dépôt-vente. 
+            Apportez vos jeux et jouets en boutique ! Cécilia les rachète ou les met en dépôt-vente.
             Deuxième vie garantie 🌱
           </p>
           <a

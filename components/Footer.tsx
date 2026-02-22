@@ -10,6 +10,24 @@ export default function Footer() {
         </svg>
       </div>
 
+      {/* Info band */}
+      <div className="bg-white/5 border-b border-white/10 mb-10 -mt-2 py-4 px-4">
+        <div className="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-3">
+          <div className="flex items-center gap-2 text-white/80 text-sm font-nunito">
+            <span>📍</span>
+            <span>16 Rue Coursarlon, 18000 Bourges</span>
+            <span className="text-white/30 hidden sm:inline">·</span>
+            <span className="hidden sm:inline">Mar–Mer, Ven–Sam : 10h–18h30</span>
+          </div>
+          <a
+            href="tel:0673883226"
+            className="inline-flex items-center gap-2 px-5 py-2 bg-coral text-white rounded-full text-sm font-bold font-nunito hover:bg-coral-dark transition-colors"
+          >
+            📞 06 73 88 32 26
+          </a>
+        </div>
+      </div>
+
       <div className="max-w-6xl mx-auto px-4 grid md:grid-cols-3 gap-10">
         {/* Brand */}
         <div>
@@ -27,7 +45,7 @@ export default function Footer() {
               href="https://www.facebook.com/elfejolo"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-10 h-10 bg-coral rounded-full flex items-center justify-center text-white hover:bg-coral-dark transition-colors hover:scale-110 transform text-lg"
+              className="w-12 h-12 bg-coral rounded-full flex items-center justify-center text-white hover:bg-coral-dark transition-colors hover:scale-110 transform text-lg"
             >
               f
             </a>
@@ -35,7 +53,7 @@ export default function Footer() {
               href="https://www.instagram.com/elfejolo"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-10 h-10 bg-coral rounded-full flex items-center justify-center text-white hover:bg-coral-dark transition-colors hover:scale-110 transform text-lg"
+              className="w-12 h-12 bg-coral rounded-full flex items-center justify-center text-white hover:bg-coral-dark transition-colors hover:scale-110 transform text-lg"
             >
               ✦
             </a>

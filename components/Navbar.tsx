@@ -1,6 +1,7 @@
 'use client';
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import { AnimatePresence, motion } from 'framer-motion';
 
 const links = [
   { href: '/', label: 'Accueil' },
@@ -49,6 +50,12 @@ export default function Navbar() {
             </Link>
           ))}
           <a
+            href="tel:0673883226"
+            className="ml-2 px-4 py-2 text-brown-light text-sm font-bold font-nunito hover:text-coral transition-colors"
+          >
+            📞 06 73 88 32 26
+          </a>
+          <a
             href="https://www.facebook.com/elfejolo"
             target="_blank"
             rel="noopener noreferrer"
@@ -60,7 +67,7 @@ export default function Navbar() {
 
         {/* Mobile burger */}
         <button
-          className="md:hidden flex flex-col gap-1.5 p-2"
+          className="md:hidden flex flex-col gap-1.5 p-3"
           onClick={() => setOpen(!open)}
           aria-label="Menu"
         >
@@ -75,28 +82,44 @@ export default function Navbar() {
       </div>
 
       {/* Mobile menu */}
-      {open && (
-        <div className="md:hidden bg-white/95 backdrop-blur-md border-t border-peach px-4 py-4 flex flex-col gap-2">
-          {links.map((l) => (
-            <Link
-              key={l.href}
-              href={l.href}
-              onClick={() => setOpen(false)}
-              className="block py-3 px-4 rounded-xl font-bold text-brown hover:bg-peach transition-colors"
-            >
-              {l.label}
-            </Link>
-          ))}
-          <a
-            href="https://www.facebook.com/elfejolo"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="block py-3 px-4 bg-coral text-white text-center rounded-xl font-bold"
+      <AnimatePresence>
+        {open && (
+          <motion.div
+            initial={{ opacity: 0, y: -12 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -12 }}
+            transition={{ duration: 0.22, ease: 'easeOut' }}
+            className="md:hidden bg-white/95 backdrop-blur-md border-t border-peach px-4 py-3 flex flex-col gap-1"
           >
-            Voir notre Facebook →
-          </a>
-        </div>
-      )}
+            {links.map((l) => (
+              <Link
+                key={l.href}
+                href={l.href}
+                onClick={() => setOpen(false)}
+                className="block py-4 px-5 rounded-xl font-bold text-brown text-lg hover:bg-peach transition-colors"
+              >
+                {l.label}
+              </Link>
+            ))}
+            <a
+              href="tel:0673883226"
+              onClick={() => setOpen(false)}
+              className="block py-4 px-5 rounded-xl font-bold text-brown text-lg hover:bg-peach transition-colors"
+            >
+              📞 06 73 88 32 26
+            </a>
+            <a
+              href="https://www.facebook.com/elfejolo"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => setOpen(false)}
+              className="block py-4 px-5 bg-coral text-white text-center rounded-xl font-bold text-lg mt-1"
+            >
+              Voir notre Facebook →
+            </a>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </header>
   );
 }
