@@ -63,7 +63,7 @@ export default function Footer() {
           <ul className="space-y-3 text-white/70 text-sm font-nunito">
             <li className="flex items-start gap-2">
               <span className="mt-0.5">📍</span>
-              <span>71 Rue d'Auron<br />18000 Bourges</span>
+              <span>16 Rue Coursarlon<br />18000 Bourges</span>
             </li>
             <li className="flex items-center gap-2">
               <span>📞</span>
@@ -71,7 +71,7 @@ export default function Footer() {
             </li>
             <li className="flex items-start gap-2">
               <span className="mt-0.5">🕐</span>
-              <span>Mardi – Samedi<br />10h – 18h30</span>
+              <span>Mar–Mer, Ven–Sam<br />10h – 18h30</span>
             </li>
             <li className="flex items-center gap-2">
               <span>⭐</span>

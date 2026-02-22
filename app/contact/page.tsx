@@ -1,18 +1,18 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "Nous Trouver - ElfeJolo | 71 Rue d'Auron, Bourges",
+  title: "Nous Trouver - ElfeJolo | 16 Rue Coursarlon, Bourges",
   description:
-    "ElfeJolo se trouve au 71 Rue d'Auron, 18000 Bourges. Ouvert du mardi au samedi de 10h à 18h30. Contactez-nous au 06 73 88 32 26.",
+    "ElfeJolo se trouve au 16 Rue Coursarlon, 18000 Bourges. Ouvert mardi, mercredi, vendredi et samedi. Contactez-nous au 06 73 88 32 26.",
 };
 
 const hours = [
   { day: 'Lundi', time: 'Fermé', open: false },
-  { day: 'Mardi', time: '10h – 18h30', open: true },
-  { day: 'Mercredi', time: '10h – 18h30', open: true },
-  { day: 'Jeudi', time: '10h – 18h30', open: true },
-  { day: 'Vendredi', time: '10h – 18h30', open: true },
-  { day: 'Samedi', time: '10h – 18h30', open: true },
+  { day: 'Mardi', time: '10h–12h30 · 14h30–18h30', open: true },
+  { day: 'Mercredi', time: '10h–12h30 · 14h30–18h30', open: true },
+  { day: 'Jeudi', time: 'Fermé', open: false },
+  { day: 'Vendredi', time: '10h–18h30', open: true },
+  { day: 'Samedi', time: '10h–18h30', open: true },
   { day: 'Dimanche', time: 'Fermé', open: false },
 ];
 
@@ -48,7 +48,7 @@ export default function ContactPage() {
           <div className="rounded-3xl overflow-hidden shadow-lg border border-brown/5" style={{ minHeight: '400px' }}>
             <iframe
               title="ElfeJolo sur Google Maps"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2699.4!2d2.3964!3d47.0804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDfCsDA0JzQ5LjQiTiAywrAyMyczMS4wIkU!5e0!3m2!1sfr!2sfr!4v1234567890!5m2!1sfr!2sfr&q=71+Rue+d+Auron+18000+Bourges"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2699.4!2d2.3964!3d47.0804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDfCsDA0JzQ5LjQiTiAywrAyMyczMS4wIkU!5e0!3m2!1sfr!2sfr!4v1234567890!5m2!1sfr!2sfr&q=16+Rue+Coursarlon+18000+Bourges"
               width="100%"
               height="100%"
               style={{ border: 0, minHeight: '400px' }}
@@ -72,9 +72,9 @@ export default function ContactPage() {
                 >
                   Adresse
                 </h3>
-                <p className="text-brown-light font-nunito">71 Rue d'Auron<br />18000 Bourges</p>
+                <p className="text-brown-light font-nunito">16 Rue Coursarlon<br />18000 Bourges</p>
                 <a
-                  href="https://www.google.com/maps/dir/?api=1&destination=71+Rue+d'Auron,+18000+Bourges"
+                  href="https://www.google.com/maps/dir/?api=1&destination=16+Rue+Coursarlon,+18000+Bourges"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-block mt-2 text-coral text-sm font-bold hover:underline font-nunito"

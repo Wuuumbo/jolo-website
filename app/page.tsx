@@ -128,9 +128,9 @@ export default function HomePage() {
           {/* Address pill */}
           <div className="mt-10 inline-flex items-center gap-2 bg-white/70 backdrop-blur px-5 py-2.5 rounded-full text-sm text-brown-light font-nunito border border-brown/5">
             <span>📍</span>
-            <span>71 Rue d'Auron, 18000 Bourges</span>
+            <span>16 Rue Coursarlon, 18000 Bourges</span>
             <span className="text-brown/30">·</span>
-            <span>Mar–Sam : 10h–18h30</span>
+            <span>Mar–Mer, Ven–Sam : 10h–18h30</span>
           </div>
         </div>
 
